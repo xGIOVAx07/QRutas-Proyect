@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Camiones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> <script src="app.js"></script>
+    <div class="container">
+        <h1>Consulta de Camiones</h1>
+
+        <div>
+            <label for="destinationSelect">Selecciona tu destino:</label>
+            <select id="destinationSelect" onchange="updateBusOptions()">
+                <option value="">Selecciona una institución...</option>
+                <option value="conalep169">Conalep 169</option>
+                <option value="uan">UAN</option>
+                <option value="tecnologico">Tecnológico</option>
+                <option value="cecyten">CECyTEN</option>
+                <option value="cetis100">CETis 100</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="busSelect">Selecciona un camión:</label>
+            <select id="busSelect" disabled>
+                <option value="">Elige un camión...</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="passengerType">Tipo de pasajero:</label>
+            <select id="passengerType" onchange="showCredentialOption()">
+                <option value="">Selecciona un tipo de pasajero...</option>
+                <option value="normal">Normal</option>
+                <option value="student">Estudiante</option>
+                <option value="child">Niño</option>
+                <option value="senior">Adulto Mayor</option>
+            </select>
+        </div>
+
+        <div id="credentialOption" style="display: none;">
+            <label for="hasCredential">¿Tienes credencial?</label>
+            <input type="checkbox" id="hasCredential">
+        </div>
+
+        <div>
+            <label for="institutionSelect">Selecciona la institución:</label>
+            <select id="institutionSelect">
+                <option value="">Selecciona una institución...</option>
+                <option value="conalep169">Conalep 169</option>
+                <option value="uan">UAN</option>
+                <option value="tecnologico">Tecnológico</option>
+                <option value="cecyten">CECyTEN</option>
+                <option value="cetis100">CETis 100</option>
+            </select>
+        </div>
+
+        <button onclick="showArrivalTimeAndFare()">Ver Tiempo de Llegada y Costo</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

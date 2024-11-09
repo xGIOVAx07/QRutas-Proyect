@@ -1,0 +1,62 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+select, input[type="checkbox"], button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+button {
+    background-color: #00aaff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+/* Result Section */
+#result {
+    margin-top: 20px;
+    background-color: #2a2a2a;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#result h3 {
+    color: #00aaff;
+}
+
+#countdownTimer {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ffdd57;
+}
